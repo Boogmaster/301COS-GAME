@@ -22,8 +22,8 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         //declares and assigns the values for the x and y movment (Time.deltaTime is time since last update)
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
         //decrease rotation every frame
         xRotation -= mouseY;
